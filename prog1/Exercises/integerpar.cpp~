@@ -1,0 +1,23 @@
+// Problem ID: 131032
+// Name: Al Jamil L. Arazas (ID: 2012-1-0712)
+// Honor Code: I have not given nor received any unauthorized help in this work.
+
+# include <iostream>
+using namespace std;
+
+int main()
+{
+ int z;
+ cin >> z;
+ if (z > 0) {
+ cout << "is positive" << endl;
+ }
+ else if (z < 0) {
+ cout << "is negative" << endl;
+ }
+ else if (z == 0) {
+ cout << "is zero" << endl;
+ }
+return 1;
+}
+

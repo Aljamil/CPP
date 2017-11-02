@@ -1,0 +1,17 @@
+// Problem ID: 131025
+// Name: Al Jamil L. Arazas (ID 2012-1-0712)
+// Honor Code:  I have not given nor received any unauthorized help in this work.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   float a,b,c,d;
+   cin >> a >> b >> c;
+   d = ((b*b) - 4*a*c);
+   cout << "The discriminant is " << d << endl;
+   
+   return 1;
+}
+ 

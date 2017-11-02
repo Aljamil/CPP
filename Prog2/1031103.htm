@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html ffpdm="vvh3elkmvqi087mn02xxuy8" xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>codeCurator -- Problem View</title>
+  <link href="1031103_files/loginmodule.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>codeCurator -- Problem View</h1>
+  <a href="http://ccs.adnu.edu.ph/codeCurator/">Sign In</a> |
+  <a href="http://ccs.adnu.edu.ph/codeCurator/activity.php">Activity</a> |
+  <a href="http://ccs.adnu.edu.ph/codeCurator/about.php">About</a>
+  <hr>
+  <br>
+  <h2>Problem 1031103 : ERO on Rationals</h2><br><h3>Problem Description</h3>You are to write a program that 
+performs the three elementary row operations
+on an inputted matrix of Rational objects.
+The program should loop indefinitely
+until an <tt>exit</tt> command is entered.
+<br><br>
+By default,
+the matrix size is 0 by 0.
+<br><br>
+The program may only process the following
+commands: <br><br>
+<table border="1">
+<tbody><tr>
+  <td>size r c</td>
+  <td>resizes the matrix to r rows and c columns</td>
+</tr>
+<tr>
+  <td>exit</td>
+  <td>exits from the program</td>
+</tr>
+<tr>
+  <td>er1 k r</td>
+  <td>multiply all values in row r by k</td>
+</tr>
+<tr>
+  <td>er2 k a b</td>
+  <td>subtract from each number in row a the corresponding 
+      value in row b times k</td>
+</tr>
+<tr>
+  <td>er3 a b</td>
+  <td>swaps the corresponding values in row a and row b</td> 
+</tr>
+<tr>
+  <td>data</td>
+  <td>populate the matrix with values read row by row (starting from row 0) from standard input</td>
+</tr>
+</tbody></table>
+
+<br>
+<br>
+<font color="RED">
+NOTE: In this problem, you are REQUIRED revise the 
+Matrix class we discussed.
+You may either transform the Matrix class as a generic Matrix
+class or simply rewrite the Matrix class so that the data in
+it are Rational objects.
+Otherwise, your solution will be marked wrong.</font><br><br><h3>Input Format</h3>The input consists of commands and parameters.<br><br><h3>Output Format</h3>For every input command, 
+output the current contents of the matrix.
+The program should always output the contents of the
+matrix until the command entered is exit.<br><br><h3>Sample Input</h3><pre>size 2 3 
+data
+1 -3 11
+2 1 1
+er2 2 1 0
+er1 1/7 1
+er2 -3 0 1
+data
+3 4 2
+1 2 3
+er3 0 1
+er2 3 1 0
+er2 -1 0 1
+er1 -1/2 1
+exit
+
+</pre><h3>Sample Output</h3><pre>1 -3 11 
+0 7 -21 
+
+1 -3 11 
+0 1 -3 
+
+1 0 2 
+0 1 -3 
+
+1 2 3 
+3 4 2 
+
+1 2 3 
+0 -2 -7 
+
+1 0 -4 
+0 -2 -7 
+
+1 0 -4 
+0 1 7/2 
+
+</pre>
+
+<h2>Sample Run</h2>
+<pre>size 2 3
+data
+1 -3 11
+2 1 1
+er2 2 1 0
+<font color="RED">1 -3 11
+0 7 -21
+</font>
+er1 1/7 1
+<font color="RED">1 -3 11
+0 1 -3
+</font>
+er2 -3 0 1
+<font color="RED">1 0 2
+0 1 -3
+</font>
+data
+3 4 2
+1 2 3
+er3 0 1
+<font color="RED">1 2 3
+3 4 2</font>
+
+er2 3 1 0
+<font color="RED">1 2 3
+0 -2 -7</font>
+
+er2 -1 0 1
+<font color="RED">1 0 -4
+0 -2 -7</font>
+
+er1 -1/2 1
+<font color="RED">1 0 -4
+0 1 7/2</font>
+
+exit
+
+</pre>
+  <br>
+  <hr>
+  <a href="http://ccs.adnu.edu.ph/codeCurator/">Sign In</a> |
+  <a href="http://ccs.adnu.edu.ph/codeCurator/activity.php">Activity</a> |
+  <a href="http://ccs.adnu.edu.ph/codeCurator/about.php">About</a>
+  <hr>
+  (c) 2011-2012 by allan a. sioson
+  <hr>
+
+
+</body></html>

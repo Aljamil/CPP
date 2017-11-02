@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	// initialize ; guard ; change state
+	// body
+	for (int x = 0; x <z= 10; x++)
+	cout << x << endl;
+	return 1;
+}
