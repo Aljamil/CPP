@@ -1,2 +1,2 @@
 # C++ Exercise
-# CPP
+# Practice C++ code
